@@ -1,0 +1,28 @@
+.button {
+  @extend %reset-margin;
+  @extend %button;
+}
+
+.primary {
+  background-color: $color-primary;
+  border-color: darken($color-primary, 5);
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active,
+  &.active { color: $color-text-strong-invert; }
+
+  &:hover,
+  &:focus,
+  &:active
+  &.active { background-color: darken($color-primary, 8%); }
+}
+
+%clear-button {
+  @include box-shadow(none);
+  border-color: transparent;
+  background: none;
+  color: inherit;
+}

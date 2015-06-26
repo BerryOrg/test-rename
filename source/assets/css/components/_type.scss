@@ -1,0 +1,12 @@
+.introduction {
+  margin: 0 auto;
+  max-width: 37.5em;
+  text-align: center;
+  color: $color-accent;
+
+  @include breakpoint($tablet-large) {
+    @include font-size-large;
+
+    .content-primary & { text-align: left; }
+  }
+}
