@@ -19,7 +19,7 @@
     <!-- Feeds Area -->
     <div class="col s12 m8 l9">
 
-        @ forelse($episodes as $episode)
+        @forelse($episodes as $episode)
         <!-- start card -->
         <div class="card">
 
@@ -83,7 +83,7 @@
                             </div>
                             <div class="collapsible-body">
                                 <ul class="collection">
-                                @ if (  Auth::check() )
+                                @if (  Auth::check() )
                                     <li class="collection-item avatar">
                                         <div class="row">
                                             <div class="col s2">
@@ -106,7 +106,8 @@
                                             <div class="point"></div>
                                         </span>
                                     </li>
-                                @ endif
+                                @else <li>Testing</li>
+                                @endif
                                     <li class="collection-item avatar">
                                         <div class="row">
                                             <div class="col s2">
@@ -127,9 +128,9 @@
             </div>
         <!-- end card -->
 
-        @ empty
+        @empty
             <p>No Episodes to display</p>
-        @ endforelse
+        @endforelse
 
         <!-- Pagination -->
         <div class="row center-align fix">
