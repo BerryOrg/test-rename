@@ -17,5 +17,3 @@ Does something for the data-registry
 =head1 COMMANDS
 
 =cut
-
-# -*- mode: perl; -*-
