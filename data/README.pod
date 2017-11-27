@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+
+=pod
+
+=head1 NAME
+
+App::DataRegistry - magic
+
+=head1 DESCRIPTION
+
+Does something for the data-registry
+
+=head1 SYNOPSIS
+
+  data-registry [command] [options]
+
+=head1 COMMANDS
+
+=cut
+
+# -*- mode: perl; -*-
